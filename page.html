@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fixed Navigation Bar</title>
+
+
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    height: 150vh; /* Set a height for demonstration purposes */
+    overflow-y: scroll;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1000; /* Set a high z-index to make sure it's on top of other elements */
+    transition: background-color 0.3s ease;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+.content {
+    padding: 20px;
+    margin-top: 60px; /* Adjust margin-top to provide space for the fixed navbar */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar" id="navbar">
+            <div class="nav-item">Home</div>
+            <div class="nav-item">About</div>
+            <div class="nav-item">Services</div>
+            <div class="nav-item">Contact</div>
+        </div>
+
+        <!-- Content Goes Here -->
+        <div class="content">
+            <h1>Your Page Content</h1>
+            <!-- Add your page content here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        // JavaScript code can be added here if needed
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    var navbar = document.getElementById("navbar")
+
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        navbar.style.backgroundColor = "#555"; /* Change background color when scrolling */
+    } else {
+        navbar.style.backgroundColor = "#333"; /* Reset background color when at the top */
+    }
+}
+
+
+    </script>
+</body>
+</html>
