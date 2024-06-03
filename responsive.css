@@ -1,392 +1,112 @@
-@media (min-width: 992px){ 
-.fixed-nav {
-    /* position: absolute; */
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 11;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-.navbar-expand-lg {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-}
-
-.fixed-nav::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    z-index: -1;
-    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
-}
-
-/* .navbar-brand img {
-    width: 394px;
-} */
-
-}
-
-
-
-@media(max-width:992px){
-    .featuredimg img {
-        width: 91% !important;
-        margin-bottom: 1px;
-        margin-top: 100px;
-    }
-/* swipper */
-.banner_wrapper .swiper .slide-caption h3{
-    color: white;
-    font-weight: bold;
-    font-size: 35px;
-    font-weight: bold;
-
-   
-    text-shadow: 10px 8px 10px 15px solid whitesmoke;
-}
-.about p{
-    letter-spacing: 1px;
-    font-size: 16px;
-    color: var(--text-color-primary);
-    font-weight: 400;
-    line-height: 24px;
-
-}
-/* swipper */
-.page-header {
-    position: absolute;
-    /* top: 50px; */
-    top: 0px;
-    right: 0;
-    left: 0;
-    padding: 20px 0;
-    z-index: 1;
-    background-color: white;
-}
-
-/* scroll top */
-
-.page-header {
-    position: absolute;
-    /* top: 50px; */
-    top: 0px;
-    right: 0;
-    left: 0;
-    padding: 20px 0;
-    z-index: 9999;
-    background-color: white;
-}
-.is-sticky{
-    position: fixed;
-    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
-    padding: 8px 0;
-    backdrop-filter: blur(10px);
-    animation: slideDown 0.35s ease-out;
-}
-
-@keyframes slideDown {
-
-    from {
-        transform: translateY(-100%);
+@media(max-width:980px)
+{
+    /* .top-nav-bar{
+        height: 118px;
+        border-bottom: 0;
     }
 
-    to {
-        transform: translateY(0);
+    .search-box{
+        width: 100%;
     }
-}
+    .menu-bar{
+        width: 100%;
+    }
+    .menu-bar ul{
+        margin: 10px 0;
+        width: 100%;
+    }
+
+
+    .menu-bar ul li{
+        height: 57px;
+        width: 100%;
+    } */
 }
 
-@media(max-width:768px){
-/* swipper */
-.banner_wrapper .swiper .slide-caption h3{
-    color: white;
-    font-weight: bold;
-    font-size: 30px;
-    font-weight: bold;
-
-   
-    text-shadow: 10px 8px 10px 15px solid whitesmoke;
-}
-
-.banner_wrapper .swiper .slide-caption p{
-    max-width: 40.5rem;
-    margin: 0 auto;
-    color:white;
-    padding: 10px;
+@media(max-width:600px){
+    .hover-icon {
+        position: absolute;
+        bottom: 202px;
+        left: 75px;
+        visibility: hidden;
+        transition: all 1s ease-in;
+    }
+    .catagry-1 p {
+        font-size: 20px;
+        color: gray;
+        font-weight: 600;
+        letter-spacing: 1px;
+        padding: 0 !important;
+    }
+    .one h3{
+        margin-bottom: 81px;
+        font-size: 29px;
     
-    font-size: 25px;
-}
-.about h3{
-    display: flex;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-.about p{
-    letter-spacing: 1px;
-    font-size: 15px;
-    color: var(--text-color-primary);
-    font-weight: 400;
-    line-height: 24px;
-
-}
-.page-header {
-    position: absolute;
-    /* top: 50px; */
-    top: 0px;
-    right: 0;
-    left: 0;
-    padding: 20px 0;
-    z-index: 1;
-    background-color: white;
-}
-
-/* swipper */
-
-.about h6 {
-    padding-bottom: 36px;
-    color: black;
-}
-/* .header-wrapp{
-    position: fixed;
-} */
-.banner_wrapper {
-    height: 40.625rem;
-    margin-bottom: -68px;
-    position: relative;
-  
-    /* margin-top: -96px; */
-     
-}
-
-.page-header {
-    position: absolute;
-    /* top: 50px; */
-    top: 0px;
-    right: 0;
-    left: 0;
-    padding: 20px 0;
-    z-index: 9999;
-    background-color: white;
-}
-
-/* imge css */
-
-.featuredimg img {
-    width: 91% !important;
-    margin-bottom: 1px;
-    margin-top: 145px;
-}
-
-.about h3 {
-    display: flex;
-    justify-content: center;
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-top: 34px;
-}
-
-
-.about p {
-    letter-spacing: 1px;
-    font-size: 17px;
-    color: var(--text-color-primary);
-    font-weight: 600;
-    line-height: 24px;
-}
-
-.icon-box h5 {
-    font-size: 18px;
-    text-align: center;
-}
-
-.card-slider .icon-box p {
-    font-size: 13px;
-}
-
-/* scroll top  */
-
-.page-header {
-    position: absolute;
-    /* top: 50px; */
-    top: 0px;
-    right: 0;
-    left: 0;
-    padding: 20px 0;
-    z-index: 9999;
-    background-color: white;
-}
-.is-sticky{
-    position: fixed;
-    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
-    padding: 8px 0;
-    backdrop-filter: blur(10px);
-    animation: slideDown 0.35s ease-out;
-}
-
-@keyframes slideDown {
-
-    from {
-        transform: translateY(-100%);
     }
 
-    to {
-        transform: translateY(0);
-    }
-}
-
-}
-
-
-@media(max-width:576px){
-/* swipper */
-.banner_wrapper .swiper .slide-caption h3{
-    color: white;
-    font-weight: bold;
-    font-size: 25px;
-    font-weight: bold;
-    padding: 10px;
-
-   
-    text-shadow: 10px 8px 10px 15px solid whitesmoke;
-}
-
-.banner_wrapper .swiper .slide-caption p{
-    max-width: 40.5rem;
-    margin: 0 auto;
-    color:white;
-    padding: 10px;
-    font-size: 25px;
-
-    
-}
-.about h3{
-    display: flex;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-.about p{
-    letter-spacing: 1px;
-    font-size: 15px;
-    color: var(--text-color-primary);
-    font-weight: 400;
-    line-height: 24px;
-
-}
-
-.icon-box .pera1 {
-    padding-bottom: 25px;
-}
-.featuredimg{
-    text-align: center;
-}
-.about h6 {
-    padding-bottom: 36px;
-    color: black;
-}
-
-.banner_wrapper .swiper-slide{
-    width: 100%;
-    height: 65%;
-    background-position:cover;
-    background-repeat: no-repeat;
-    background-size: cover !important;
-    position: relative;
-}
-
-.banner_wrapper .swiper {
-    width: 100%;
-    height: 52%;
-}
-
-.banner_wrapper {
-    height: 19.625rem;
-    /* margin-bottom: -110px; */
-    margin-top: 100px;
-}
-/* swipper */
-
-
-/* web app css */
-.small{
-    text-align: start;
-}
-
-
-/* .banner_wrapper {
-    height: 40.625rem;
-    margin-bottom: -384px;
-    position: relative;
-  
-    /* margin-top: -96px; */
-     
-
-
-.banner_wrapper {
-    height: 40.625rem;
-    margin-bottom: -384px;
-    position: relative;
-    margin-top: 0px;
-}
-
-.page-header {
-    position: absolute;
-    /* top: 50px; */
-    top: 0px;
-    right: 0;
-    left: 0;
-    padding: 20px 0;
-    z-index: 9999;
-    background-color: white;
-}
-.banner-content{
-    h1{
+    .scard {
+        position: absolute;
+        bottom: 54px;
+        background-color: #e00240;
+        width: 78vw;
+        left: 30px;
         text-align: center;
-        margin-top: 91px;
-        font-size: 36px;
-    }
-}
-
-
-/* scrollbar  */
-
-.page-header {
-    position: absolute;
-    /* top: 50px; */
-    top: 0px;
-    right: 0;
-    left: 0;
-    padding: 20px 0;
-    z-index: 9999;
-    background-color: white;
-}
-.is-sticky{
-    position: fixed;
-    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
-    padding: 8px 0;
-    backdrop-filter: blur(10px);
-    animation: slideDown 0.35s ease-out;
-}
-
-@keyframes slideDown {
-
-    from {
-        transform: translateY(-100%);
+        padding: 10px;
     }
 
-    to {
-        transform: translateY(0);
+    .socard img {
+        width: 375px;
+        position: absolute;
+        top: 0px;
+        margin-left: -61px;
+        transition: all 1s ease;
     }
-}
-/* logo -size */
-.navbar-brand img {
-    width: 171px;
-}
 
+    .socard .round-card {
+        position: "";
+        width: 192px;
+        height: 193px;
+        margin-top: 84px;
+        margin-left: 64px;
+        background-color: #000;
+        border-radius: 101px;
+    }
+    /* .swiper-slide{
+        height: 400px !important;
+    }
+    .swiper-slide img{
+      height: 400px;
+    } */
 
+    .swiper {
+        width: 100%;
+        height:50vh;
+      }
+
+      .catagry h3{
+        font-size: 41px;
+      }
+
+      .navbar-nav{
+        text-align: center;
+      }
+      .token{
+        text-align: center;
+
+        text-align: center;
+        padding-top: 12px;
+        font-size: 26px;
+        padding-bottom: 13px;
 }
-
+.token .fa {
+    margin-right: 25px;
+    font-size: 28px;
+    color: white;
+}
+.nav-link {
+    color: white;
+    font-size: 21px;
+    font-weight: 600;
+}
+      
+}

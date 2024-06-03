@@ -1,148 +1,111 @@
-// navbar updown code
-// let nav = document.querySelector(".navbar");
-// window.scroll = function(){
-//   if(document.documentElement.scrollTop >50){
-//     nav.classList.add("header-scrolled");
-//   }else{
-//     nav.classList.remove("header-scrolled");
-//   }
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+var swiper = new Swiper(".mySwiper", {
+  // Optional parameters
+  direction: "vertical",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: "true",
+  },
+  autoplay: {
+    delay: 3500
+  }
+
+// const tooltipTriggerList = document.querySelectorAll(
+//   '[data-bs-toggle="tooltip"]'
+// );
+// const tooltipList = [...tooltipTriggerList].map(
+//   (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+// );
+
+// //  swich case....................
+// switch (new Date().getDay()) {
+//   case 0:
+//     day = "sunday";
+//     break;
+//   case 1:
+//     day = "Monday";
+//     break;
+//   case 2:
+//     day = "Twesday";
+//     break;
+
+//   case 3:
+//     day = "Wednessday";
+//     break;
+
+//   case 4:
+//     day = " Thursday";
+//     break;
+
+//   case 5:
+//     day = " Friday";
+//     break;
+
+//   case 6:
+//     day = "Saturday";
+//     break;
 // }
 
+//////
+// const anyDay=prompt();
 
- 
-const header = document.querySelector(".page-header");
-const toggleClass = "is-sticky";
+// switch (anyDay){
+//   case Monday:
+//     day="Today is office";
+//     break;
 
-window.addEventListener("scroll", () => {
-    const currentScroll = window.pageYOffset;
-    if (currentScroll > 10) {
-        header.classList.add(toggleClass);
-    } else {
-        header.classList.remove(toggleClass);
-    }
-});
+//   case Twesday:
+//    day=" today is office";
+//    break;
 
+//    case Wednesday:
+//     day="Today is office";
+//     break;
 
+//     case Thrusday:
+//     day="Today is office";
+//     break;
 
-// const header = document.querySelector(".page-header");
-// const toggleClass = "is-sticky";
+//   case Friday:
+//     day="Today is office";
+//     break;
 
-// window.addEventListener("scroll", () => {
-//   const currentScroll = window.pageYOffset;
-//   if (currentScroll > 150) {
-//     header.classList.add(toggleClass);
-//   } else {
-//     header.classList.remove(toggleClass);
-//   }
-// });
+//   case Saturday:
+//     day="Today is hollyday";
+//     break;
 
-// nav scroll
-// window.onscroll = function() {scrollFunction()};
+//   case Sunday:
+//     day="Today is hollyday";
 
-// function scrollFunction() {
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     document.getElementById("header").style.top = "0";
-//   } else {
-//     document.getElementById("header").style.top = "-50px";
-//   }
-// }
-
- 
-    var swiper = new Swiper('.mySwiper', {
-        // Optional parameters
-        direction: 'vertical',
-        loop: true,
-      
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-          clickable:'true'
-        },
-       autoplay:{
-        delay:3500,
-       },
-        
-      });
- 
-
-
- 
-
-
-    var swiper1 = new Swiper("#mySlider", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-       
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        autoplay:{
-            delay:3500,
-           },
-           breakpoints: {
-            640: {
-              slidesPerView: 2,
-             
-            },
-            540: {
-                slidesPerView: 1,
-               
-              },
-              300: {
-                slidesPerView: 1,
-               
-              },
-              275: {
-                slidesPerView: 1,
-               
-              },
-            768: {
-              slidesPerView: 3,
-             
-            },
-            1200: {
-                slidesPerView: 4,
-               
-              },
-            1400: {
-              slidesPerView: 4,
-               
-            },
-          },
-      });
- 
+//     break;
 
 
 
-//   let swiper = new Swiper('.swiper-container-1',{
-//     slidesPerView: 4,
-//     spaceBetween: 30,
-//     slidesPerView:4,
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//     autoplay:{
-//         delay:3500,
-//        },
-//        navigation:{
-//         nextEl: "Swiper-button-next",
-//         nextEl: "Swiper-button-prev",
-//        },
-//        breakpoints: {
-//         640: {
-//           slidesPerView: 2,
-          
-//         },
-//         768: {
-//           slidesPerView: 4,
-           
-//         },
-//         1024: {
-//           slidesPerView: 4,
-//           spaceBetween: 50,
-//         },
-//       },
-//   })
-  
+//  }console.log(anyDay);
+
+
+// const anynum=12;
+
+// switch (anynum){
+//   case 1:
+//     day="monday";
+//     break;
+//   case 2:
+//     day="twesday";
+//     break;
+//   case 3:
+//     day="wednesday";
+//     break;
+//   case 3:
+//     day="thrusday";
+//     break;
+//   case 4:
+//   day="friday";
+//   break;
+//   case 5:
+//     day="saturday , today is hollyday";
+// }console.log(anynum);
